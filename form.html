@@ -36,74 +36,64 @@
     </header>
    
     <main>
-
-
-
-
-        
-
-        
-
-
        
         <div class="d-flex flex-row">
 
              <!--SIDEBAR-->
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100 d-none d-md-block" style="width: 280px;">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">Bootstrap Dashboard</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li>
-                    <a href="#" class="nav-link">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="./sponsorizations.html" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                        Sponsorizzazione
-                    </a>
-                </li>
-                <li>
-                    <a href="./products.html" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                        Prodotti
-                        </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link active text-white" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                        Nuovo prodotto
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                        Clienti
-                    </a>
-                </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>Mario Rossi</strong>
+             <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100 d-none d-lg-block" style="width: 280px;">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-4">Bootstrap Dashboard</span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                    <li><a class="dropdown-item" href="#">Profilo</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Esci</a></li>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <i class="bi bi-house-door-fill fs-5 me-1"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sponsorizations.html" class="nav-link text-white">
+                            <i class="bi bi-graph-up fs-5 me-1"></i>
+                            Sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./products.html" class="nav-link text-white">
+                            <i class="bi bi-archive-fill fs-5 me-1"></i>
+                            Prodotti
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active text-white" aria-current="page">
+                            <i class="bi bi-plus fs-5 me-1"></i>
+                            Nuovo prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <i class="bi bi-person-fill fs-5 me-1"></i>
+                            Clienti
+                        </a>
+                    </li>
                 </ul>
+                <hr>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>Mario Rossi</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
         
     
-            <div class="page container-fluid text-center">
+            <div class="page container-fluid text-center m-5">
 
                 <div class="row row-cols-1">
 
@@ -113,91 +103,108 @@
 
                 </div>
 
-                <div class="row row-cols-1 row-cols-lg-2">
+                <div class="row row-cols-1 row-cols-lg-2 mt-5">
 
-                    <div class="col">
+                    <div class="col text-start">
+
+                        <div class="row row-cols-2 align-items-center">
+                            <div class="col w-25 text-start">Nome</div>
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                  
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col w-25 text-start">Prezzo</div>
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col w-25 text-start">Marca</div>
+                            <div class="col">
+                                <select class="form-select mb-3" aria-label="Default select example">
+                                    <option selected>---Seleziona---</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                          
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control p-0" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label class="p-1 text-body-secondary for="floatingTextarea2">Inserire la descrizione del prodotto, massimo 1000 caratteri</label>
+                        </div>
 
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">@</span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                          </div>
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                        </div>
                           
-                          <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2">@example.com</span>
-                          </div>
-                          
-                          <div class="mb-3">
-                            <label for="basic-url" class="form-label">Your vanity URL</label>
-                            <div class="input-group">
-                              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-                            </div>
-                            <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-                          </div>
-                          
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text">.00</span>
-                          </div>
-                          
-                          <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                          </div>
-                          
-                          <div class="input-group">
-                            <span class="input-group-text">With textarea</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                            <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                            <button type="button" class="btn btn-outline-secondary">Fuori produzione</button>
+                            <button type="button" class="btn btn-outline-secondary">In arrivo</button>
                         </div>
 
+                        <div>
+                            <button class="btn btn-primary" type="submit">Salva</button>
+                        </div>
+                        
+                          
                     </div>
 
-                    <div class="col">
+                    <div class="col border rounded ps-0 pe-0">
 
-                        <div class="form-check">
+                        <div class="form-check border-bottom px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label fs-5" for="flexCheckChecked">
                               fotocamera principale
                             </label>
-                            <p>foto di alta qualità e registrare video nitidi</p>
+                            <p class="text-secondary">foto di alta qualità e registrare video nitidi</p>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check border-bottom px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <label class="form-check-label fs-5" for="flexCheckDefault">
                               schermo OLED
                             </label>
-                            <p>offre colori vividi per un'esperienza visiva straordinaria</p>
+                            <p class="text-secondary">offre colori vividi per un'esperienza visiva straordinaria</p>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check border-bottom px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label fs-5" for="flexCheckChecked">
                               processore Octa-core
                             </label>
-                            <p>prestazioni fluide e veloci per eseguire le applicazioni più esigenti</p>
+                            <p class="text-secondary">prestazioni fluide e veloci per eseguire le applicazioni più esigenti</p>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check border-bottom px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label fs-5" for="flexCheckChecked">
                               ricarica wireless
                             </label>
-                            <p>consente di ricaricare lo smartphone comodamente senza l'uso di cavi</p>
+                            <p class="text-secondary">consente di ricaricare lo smartphone comodamente senza l'uso di cavi</p>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check border-bottom px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label fs-5" for="flexCheckChecked">
                               connessione 5G
                             </label>
-                            <p>navigazione ultra veloce e streaming senza interruzioni</p>
+                            <p class="text-secondary">navigazione ultra veloce e streaming senza interruzioni</p>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check px-5 pt-2">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label fs-5" for="flexCheckChecked">
                               tecnologia NFC
                             </label>
-                            <p>per effettuare pagamenti senza contatto</p>
+                            <p class="text-secondary">per effettuare pagamenti senza contatto</p>
                         </div>
 
                     </div>
