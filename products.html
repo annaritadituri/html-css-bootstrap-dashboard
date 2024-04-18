@@ -42,38 +42,37 @@
              <!--SIDEBAR-->
              <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100 d-none d-lg-block" style="width: 280px;">
                 <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 <span class="fs-4">Bootstrap Dashboard</span>
                 </a>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li>
-                        <a href="#" class="nav-link">
-                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                        <a href="#" class="nav-link text-white">
+                            <i class="bi bi-house-door-fill fs-5 me-1"></i>
                             Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="./sponsorizations.html" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                            <i class="bi bi-graph-up fs-5 me-1"></i>
                             Sponsorizzazione
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link active text-white" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                            <i class="bi bi-archive-fill fs-5 me-1"></i>
                             Prodotti
                             </a>
                     </li>
                     <li>
                         <a href="./form.html" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                            <i class="bi bi-plus fs-5 me-1"></i>
                             Nuovo prodotto
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                            <i class="bi bi-person-fill fs-5 me-1"></i>
                             Clienti
                         </a>
                     </li>
@@ -93,24 +92,26 @@
                 </div>
             </div>
     
-            <div class="page container-fluid">
+            <div class="page container-fluid m-4">
                 
                 <div class="products d-flex flex-row justify-content-between align-items-center">
                     <h1>10 prodotti trovati</h1>
-                    <div class="buttons">
-                        <button></button>
-                        <button></button>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary">Esporta</button>
+                        <button type="button" class="btn btn-outline-secondary">Nuovo</button>
                     </div>
                 </div>
+
+                <hr>
     
                 <div class="list">
     
-                    <table class="table">
+                    <table class="table align-middle text-center">
     
-                        <thead>
+                        <thead class="border-0 border-secondary-subtle">
     
-                          <tr>
-                            <th scope="col">Nome</th>
+                          <tr >
+                            <th style="width:70%" scope="col" class="text-start">Nome</th>
                             <th scope="col" class="">Prezzo</th>
                             <th scope="col" class="d-none d-lg-block">Stato</th>
                             <th scope="col">Azioni</th>
@@ -118,35 +119,135 @@
     
                         </thead>
     
-                        <tbody class="table-group-divider">
+                        <tbody class="table-group-divider border-0 border-secondary-subtle">
     
                           <tr>
-                            <td>bla bla</td>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Smartphone Samsung Galaxy S21</p>
+                                <p class="m-0 p-0 text-secondary">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</p>
+                            </td>
                             <td>799.00 &euro;</td>
-                            <td class="d-none d-lg-block">bla bla</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
                             <td>
-                                <button></button>
-                                <button></button>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
                             </td>
                           </tr>
     
                           <tr>
-                            <td>bla bla</td>
-                            <td>799.00 &euro;</td>
-                            <td class="d-none d-lg-block">bla bla</td>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Apple MacBook Pro 13"</p>
+                                <p class="m-0 p-0 text-secondary">Processore M1, SSD ultraveloce, Display Retina</p>
+                            </td>
+                            <td>1299.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
                             <td>
-                                <button></button>
-                                <button></button>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
                             </td>
                           </tr>
     
                           <tr>
-                            <td>bla bla</td>
-                            <td>799.00 &euro;</td>
-                            <td class="d-none d-lg-block">bla bla</td>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Smartwatch Apple Watch Series 6</p>
+                                <p class="m-0 p-0 text-secondary">Monitoraggio attività, Misurazione ossigeno nel sangue, Display Always-On</p>
+                            </td>
+                            <td>429.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
                             <td>
-                                <button></button>
-                                <button></button>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%"class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Auricolari Wireless Apple AirPods Pro</p>
+                                <p class="m-0 p-0 text-secondary">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</p>
+                            </td>
+                            <td>279.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Console Sony Playstation 5</p>
+                                <p class="m-0 p-0 text-secondary">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</p>
+                            </td>
+                            <td>499.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Monitor Gaming ASUS ROG Strix XG27UQ</p>
+                                <p class="m-0 p-0 text-secondary">Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</p>
+                            </td>
+                            <td>999.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Stampante Multifunzione HP LaserJet Pro MFP M28w</p>
+                                <p class="m-0 p-0 text-secondary">Stampa, Scansione, Copia, Connessione Wi-Fi</p>
+                            </td>
+                            <td>159.00 &euro;</td>
+                            <td><i class="text-danger fs-2 bi bi-x-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Router Wi-Fi Mesh TP-Link Deco X20</p>
+                                <p class="m-0 p-0 text-secondary">Copertura fino a 560 mq, Velocità fino a 1080 Mbps, Gestione tramite app</p>
+                            </td>
+                            <td>199.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">SSD NVMe Western Digital Black SN850</p>
+                                <p class="m-0 p-0 text-secondary">Capacità 1TB, Velocità di lettura fino a 7000 MB/s, Tecnologia PCIe Gen4</p>
+                            </td>
+                            <td>229.00 &euro;</td>
+                            <td><i class="text-success fs-2 bi bi-check-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width:70%" class="text-start">
+                                <p class="m-0 p-0 fw-semibold">Mouse Gaming Logitech G502 HERO</p>
+                                <p class="m-0 p-0 text-secondary">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</p>
+                            </td>
+                            <td>79.00 &euro;</td>
+                            <td><i class="text-danger fs-2 bi bi-x-circle"></i></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i></button>
                             </td>
                           </tr>
     
